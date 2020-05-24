@@ -3,7 +3,7 @@ services:
     -docker
 
 before_install:
-    - docker build --network=host -t tobbyioa/docker-react -f Dockerfile.dev .
+    - docker build -t tobbyioa/docker-react -f Dockerfile.dev .
 
 # script:
 #     - docker run tobbyioa/docker-react npm run test -- --coverage
