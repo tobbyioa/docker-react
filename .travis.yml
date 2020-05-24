@@ -3,7 +3,8 @@ services:
     -docker
 
 before_install:
+    - gem install bundler --pre
     - docker build -t tobbyioa/docker-react -f Dockerfile.dev .
 
-# script:
+script: "rake"
 #     - docker run tobbyioa/docker-react npm run test -- --coverage
