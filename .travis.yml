@@ -7,7 +7,7 @@ services:
 
 before_install:
     # - gem install bundler --pre
-    - docker build --network=host-t tobbyioa/docker-react -f Dockerfile.dev .
+    - docker build --network=host -t tobbyioa/docker-react -f Dockerfile.dev .
 
 # script: 
 #     - docker run tobbyioa/docker-react npm run test -- --coverage
